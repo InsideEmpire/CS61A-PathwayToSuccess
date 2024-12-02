@@ -6,6 +6,9 @@
   - Lab 0
     - [Website](https://web.archive.org/web/20201111145450/https://cs61a.org/lab/lab00/)
     - [Solution](Lab/lab00)
+  - Lab 1
+    - [Website](Lab/lab01/)
+    - [Solution](https://web.archive.org/web/20201130111318/https://cs61a.org/lab/lab01/)
 
 - HW
   - HW 1
