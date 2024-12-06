@@ -1,4 +1,4 @@
-# CS61A - Fall 2020 代码全解 Full Code Guide
+# CS61A - Fall 2024 代码全解 Full Code Guide
 
 ## 目录
 
