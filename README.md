@@ -20,10 +20,9 @@
 
 - Project
   - Project 1: The Game of Hog(2023 Spring)
-    - Due of some irresistible reasons, we can only download 2023 version of this project. If you want to see the solution for Fall 2020 version of this project, you can go this [link](https://github.com/PKUFlyingPig/CS61A/blob/master/projects/hog/hog.py).
-    - 由于一些不可抗力的原因，我们只能下载 2023 版本的这个项目。 如果你想查看 2020 年秋季版本的解决方案，你可以访问这个[链接](https://github.com/PKUFlyingPig/CS61A/blob/master/projects/hog/hog.py)。
     - [Website](https://web.archive.org/web/20230314030325/https://cs61a.org/proj/hog/#problem-2-2-pt)
     - [Solution](Projects/hog)
+    - [2020 Fall Solution](https://github.com/PKUFlyingPig/CS61A/blob/master/projects/hog/hog.py)
 
 ## 友链 Friend Links:
 
