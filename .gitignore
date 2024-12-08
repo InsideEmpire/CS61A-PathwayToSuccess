@@ -165,6 +165,6 @@ cython_debug/
 .DS_Store
 
 # Ignore OK autograde files
-.ok_history
-.ok_messages
-.ok_storage.db
+**/.ok_history
+**/.ok_messages
+**/.ok_storage.db
