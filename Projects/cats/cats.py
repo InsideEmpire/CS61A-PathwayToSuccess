@@ -131,7 +131,11 @@ def wpm(typed, elapsed):
     """
     assert elapsed > 0, "Elapsed time must be positive"
     # BEGIN PROBLEM 4
-    "*** YOUR CODE HERE ***"
+    average_words = len(typed) / 5
+    minutes = elapsed / 60
+    # print("DEBUG:", "average_words:", average_words)
+    # print("DEBUG:", "minutes:", minutes)
+    return average_words / minutes
     # END PROBLEM 4
 
 
