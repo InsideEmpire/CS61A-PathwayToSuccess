@@ -37,7 +37,13 @@ def pick(paragraphs, select, k):
     ''
     """
     # BEGIN PROBLEM 1
-    "*** YOUR CODE HERE ***"
+    i = -1
+    for paragraph in paragraphs:
+        if select(paragraph):
+            i += 1
+            if i == k:
+                return paragraph
+    return ""
     # END PROBLEM 1
 
 
