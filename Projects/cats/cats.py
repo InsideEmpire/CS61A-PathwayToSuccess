@@ -99,7 +99,21 @@ def accuracy(typed, source):
     typed_words = split(typed)
     source_words = split(source)
     # BEGIN PROBLEM 3
-    "*** YOUR CODE HERE ***"
+    # print("DEBUG:", "len of typed:", len(typed_words)) 
+    # print("DEBUG:", "len of source:", len(source_words)) 
+    if len(typed_words) == 0:
+        return 100.0 if len(source_words) == 0 else 0.0
+
+    index = 0
+    aiming_accuracy = len(typed_words)
+    acutal_accuracy = 0
+    # print("DEBUG:", "aiming_accuracy:", aiming_accuracy) 
+    for i in range(min(len(typed_words), len(source_words))):
+        if typed_words[i] == source_words[i]:
+            acutal_accuracy += 1
+        index += 1
+    # print("DEBUG:", "acutal_accuracy:", acutal_accuracy)
+    return acutal_accuracy / aiming_accuracy * 100
     # END PROBLEM 3
 
 
