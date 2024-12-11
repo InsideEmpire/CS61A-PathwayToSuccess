@@ -9,7 +9,8 @@ from gui_files.common_server import Server, route, sendto, start
 from multiplayer import multiplayer
 
 PORT = 31415
-DEFAULT_SERVER = "https://cats.cs61a.org"
+# DEFAULT_SERVER = "https://cats.cs61a.org"
+DEFAULT_SERVER = None
 GUI_FOLDER = "gui_files/"
 PARAGRAPH_PATH = "./data/sample_paragraphs.txt"
 WORDS_LIST = cats.lines_from_file("data/words.txt")
