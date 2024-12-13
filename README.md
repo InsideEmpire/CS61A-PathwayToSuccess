@@ -3,38 +3,22 @@
 ## 目录
 
 - Lab
-  - Lab 0 (2020 Fall)
-    - [Website](https://web.archive.org/web/20201111145450/https://cs61a.org/lab/lab00/)
-    - [Solution](Lab/2020Fall/lab00)
+  - Lab 0 (2020 Fall) - [Website](https://web.archive.org/web/20201111145450/https://cs61a.org/lab/lab00/) - [Solution](Lab/2020Fall/lab00)
 
-  - Lab 1 (2020 Fall)
-    - [Website](https://web.archive.org/web/20201130111318/https://cs61a.org/lab/lab01/)
-    - [Solution](Lab/2020Fall/lab01)
+  - Lab 1 (2020 Fall) - [Website](https://web.archive.org/web/20201130111318/https://cs61a.org/lab/lab01/) - [Solution](Lab/2020Fall/lab01)
 
-  - Lab 2 (2020 Fall)
-    - [Website](https://web.archive.org/web/20201219202517/https://cs61a.org/lab/lab02/)
-    - [Solution](Lab/2020Fall/lab02)
+  - Lab 2 (2020 Fall) - [Website](https://web.archive.org/web/20201219202517/https://cs61a.org/lab/lab02/) - [Solution](Lab/2020Fall/lab02)
 
-  - Lab 3
-    - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab03/index.html)
-    - [Solution](Lab/lab04/)
+  - Lab 3 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab03/index.html) - [Solution](Lab/lab04/)
 
-  - Lab 4
-    - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab04/index.html)
-    - [Solution](Lab/lab04/)
+  - Lab 4 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab04/index.html) - [Solution](Lab/lab04/)
 
 - HW
-  - HW 1 (2020 Fall)
-    - [Website](https://cs61a.org/hw/hw01/)
-    - [Solution](HW/2020Fall/hw01)
+  - HW 1 (2020 Fall) - [Website](https://cs61a.org/hw/hw01/) - [Solution](HW/2020Fall/hw01)
 
-  - HW 1
-    - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw01/index.html)
-    - [Solution](HW/hw01/)
+  - HW 1 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw01/index.html) - [Solution](HW/hw01/)
 
-  - HW 3
-    - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw03/index.html)
-    - [Solution](HW/hw03/)
+  - HW 3 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw03/index.html) - [Solution](HW/hw03/)
 
 - Project
   - Project 1: The Game of Hog (2023 Spring)
