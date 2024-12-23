@@ -18,6 +18,8 @@
 
   - HW 1 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw01/index.html) - [Solution](HW/hw01/)
 
+  - HW 2 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw02/index.html) - [Solution](HW/hw02/)
+
   - HW 3 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw03/index.html) - [Solution](HW/hw03/)
 
 - Project
