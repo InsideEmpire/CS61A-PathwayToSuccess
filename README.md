@@ -22,6 +22,8 @@
 
   - HW 3 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw03/index.html) - [Solution](HW/hw03/)
 
+  - HW 4 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw04/index.html) - [Solution](HW/hw04/)
+
 - Project
   - Project 1: The Game of Hog (2023 Spring)
     - [Website](https://web.archive.org/web/20230314030325/https://cs61a.org/proj/hog/#problem-2-2-pt)
