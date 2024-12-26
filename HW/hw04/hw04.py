@@ -147,7 +147,13 @@ def berry_finder(t):
     >>> berry_finder(t)
     True
     """
-    "*** YOUR CODE HERE ***"
+    boolen = False
+    if label(t) == "berry":
+            boolen = True
+    else:
+        for branch in branches(t):
+            boolen = boolen or berry_finder(branch)
+    return boolen
 
 
 HW_SOURCE_FILE=__file__
