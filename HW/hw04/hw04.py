@@ -168,7 +168,15 @@ def max_path_sum(t):
     >>> max_path_sum(t2) # 5, 2, 10
     17
     """
-    "*** YOUR CODE HERE ***"
+    sum = label(t)
+    if is_leaf(t):
+        return sum
+    elif is_tree(t):
+        branch_sum = 0
+        for branch in branches(t):
+            branch_sum = max_path_sum(branch) if max_path_sum(branch) > branch_sum else branch_sum
+        sum += branch_sum
+    return sum
 
 
 def mobile(left, right):
