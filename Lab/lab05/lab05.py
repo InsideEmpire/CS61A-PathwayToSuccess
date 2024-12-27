@@ -149,7 +149,9 @@ def sprout_leaves(t, leaves):
           1
           2
     """
-    "*** YOUR CODE HERE ***"
+    if is_leaf(t):
+        return tree(label(t), [tree(leaf) for leaf in leaves])
+    return tree(label(t), [sprout_leaves(s, leaves) for s in branches(t)])
 
 
 def partial_reverse(s, start):
