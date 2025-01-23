@@ -60,7 +60,13 @@ def stair_ways(n):
     >>> list(s_w) # Ensure you're not yielding extra
     []
     """
-    "*** YOUR CODE HERE ***"
+    def ways(array, left):
+        if left == 0:
+            yield array
+        elif left > 0:
+            yield from ways(array + [1], left - 1)
+            yield from ways(array + [2], left - 2)
+    yield from ways([], n)
 
 
 def yield_paths(t, value):
