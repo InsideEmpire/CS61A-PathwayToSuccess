@@ -37,11 +37,14 @@ def merge(a, b):
     a_val, b_val = next(a), next(b)
     while True:
         if a_val == b_val:
-            "*** YOUR CODE HERE ***"
+            yield a_val
+            a_val, b_val = next(a), next(b)
         elif a_val < b_val:
-            "*** YOUR CODE HERE ***"
+            yield a_val
+            a_val = next(a)
         else:
-            "*** YOUR CODE HERE ***"
+            yield b_val
+            b_val = next(b)
 
 
 def stair_ways(n):
