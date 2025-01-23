@@ -9,7 +9,14 @@ def hailstone(n):
     >>> next(hail_gen)
     1
     """
-    "*** YOUR CODE HERE ***"
+
+    yield n
+    if n == 1:
+        yield from hailstone(n)
+    if n % 2 == 0:
+        yield from hailstone(n // 2)
+    else:
+        yield from hailstone(n * 3 + 1)
 
 
 def merge(a, b):
