@@ -268,7 +268,7 @@ class FireAnt(Ant):
 # BEGIN Problem 6
 # The WallAnt class
 class WallAnt(Ant):
-    '''WallAnt does nothing each turns'''
+    """WallAnt does nothing each turns"""
 
     name = 'Wall'
     food_cost = 4
@@ -280,6 +280,25 @@ class WallAnt(Ant):
 
 # BEGIN Problem 7
 # The HungryAnt Class
+class HungryAnt(Ant):
+    
+    name = 'Hungry'
+    food_cost = 4
+    implemented = True
+    chew_cooldown = 3
+
+    def __init__(self, health=1):
+        super().__init__(health)
+        self.cooldown = 0
+    
+    def action(self, gamestate):
+        bee = random_bee(self.place.bees)
+        if self.cooldown <= 0 and bee:
+            bee.reduce_health(bee.health)
+            self.cooldown = self.chew_cooldown
+        else:
+            self.cooldown -= 1
+
 # END Problem 7
 
 
