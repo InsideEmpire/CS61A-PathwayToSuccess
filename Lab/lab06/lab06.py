@@ -192,10 +192,10 @@ class Mint:
         self.update()
 
     def create(self, coin):
-        "*** YOUR CODE HERE ***"
+        return coin(self.year)
 
     def update(self):
-        "*** YOUR CODE HERE ***"
+        self.year = self.present_year
 
 class Coin:
     cents = None # will be provided by subclasses, but not by Coin itself
@@ -204,7 +204,7 @@ class Coin:
         self.year = year
 
     def worth(self):
-        "*** YOUR CODE HERE ***"
+        return self.cents + Mint.present_year - self.year - 50 if Mint.present_year - self.year > 50 else self.cents
 
 class Nickel(Coin):
     cents = 5
