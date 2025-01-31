@@ -6,7 +6,7 @@ class Transaction:
 
     def changed(self):
         """Return whether the transaction resulted in a changed balance."""
-        "*** YOUR CODE HERE ***"
+        return self.before != self.after
 
     def report(self):
         """Return a string describing the transaction.
@@ -20,7 +20,10 @@ class Transaction:
         """
         msg = 'no change'
         if self.changed():
-            "*** YOUR CODE HERE ***"
+            if self.after > self.before:
+                msg = 'increased ' + str(self.before) + '->' + str(self.after)
+            else:
+                msg = 'decreased ' + str(self.before) + '->' + str(self.after)
         return str(self.id) + ': ' + msg
 
 class BankAccount:
@@ -67,21 +70,29 @@ class BankAccount:
     def __init__(self, account_holder):
         self.balance = 0
         self.holder = account_holder
+        self.transactions = []
 
     def deposit(self, amount):
         """Increase the account balance by amount, add the deposit
         to the transaction history, and return the new balance.
         """
+        before = self.balance
         self.balance = self.balance + amount
+        after = self.balance
+        self.transactions.append(Transaction(len(self.transactions), before, after))
         return self.balance
 
     def withdraw(self, amount):
         """Decrease the account balance by amount, add the withdraw
         to the transaction history, and return the new balance.
         """
+        before = self.balance
         if amount > self.balance:
+            self.transactions.append(Transaction(len(self.transactions), before, before))
             return 'Insufficient funds'
         self.balance = self.balance - amount
+        after = self.balance
+        self.transactions.append(Transaction(len(self.transactions), before, after))
         return self.balance
 
 
