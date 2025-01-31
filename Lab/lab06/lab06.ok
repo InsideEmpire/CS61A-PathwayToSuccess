@@ -1,0 +1,26 @@
+{
+    "name": "Lab 6",
+    "endpoint": "cal/cs61a/fa24/lab06",
+    "src": [
+        "lab06.py",
+        "classes.py"
+    ],
+    "tests": {
+        "lab*.py": "doctest",
+        "tests/*.py": "ok_test",
+        "classes.py": "doctest"
+    },
+    "default_tests": [
+        "BankAccount",
+        "Client",
+        "Mint"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}
