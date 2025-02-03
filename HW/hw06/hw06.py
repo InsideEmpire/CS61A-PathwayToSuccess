@@ -122,7 +122,10 @@ def store_digits(n):
     >>> cleaned = re.sub(r"#.*\\n", '', re.sub(r'"{3}[\s\S]*?"{3}', '', inspect.getsource(store_digits)))
     >>> print("Do not use str or reversed!") if any([r in cleaned for r in ["str", "reversed"]]) else None
     """
-    "*** YOUR CODE HERE ***"
+    link = Link.empty
+    while n != 0:
+        link, n = Link(n % 10, link), n // 10
+    return link
 
 
 def deep_map_mut(func, s):
