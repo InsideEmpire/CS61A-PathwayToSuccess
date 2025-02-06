@@ -100,7 +100,11 @@ def without(s, i):
     >>> without(s, 4) is not s  # Make sure a copy is created
     True
     """
-    "*** YOUR CODE HERE ***"
+    if s is Link.empty:
+        return Link.empty
+    if i == 0:
+        return s.rest
+    return Link(s.first, without(s.rest, i - 1))
 
 
 def duplicate_link(s, val):
