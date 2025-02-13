@@ -20,7 +20,15 @@
   compose_f_g
 )
 
-(define (repeat f n) 'YOUR-CODE-HERE)
+(define (repeat f n) 
+  (define (repeat_f x)
+    (if (< n 1)
+      x
+      ((repeat f (- n 1)) (f x))
+    )
+  )
+  repeat_f
+)
 
 (define (max a b)
   (if (> a b)
