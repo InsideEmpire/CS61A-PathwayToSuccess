@@ -6,7 +6,12 @@
   )
 )
 
-(define (make-adder num) 'YOUR-CODE-HERE)
+(define (make-adder num) 
+  (define (adder inc)
+    (+ num inc)
+  )
+  adder
+)
 
 (define (composed f g) 'YOUR-CODE-HERE)
 
