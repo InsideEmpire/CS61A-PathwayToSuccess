@@ -13,7 +13,12 @@
   adder
 )
 
-(define (composed f g) 'YOUR-CODE-HERE)
+(define (composed f g) 
+  (define (compose_f_g num)
+    (f (g num))
+  )
+  compose_f_g
+)
 
 (define (repeat f n) 'YOUR-CODE-HERE)
 
