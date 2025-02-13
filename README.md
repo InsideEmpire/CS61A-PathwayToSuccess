@@ -18,6 +18,10 @@
   - Lab 6 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab06/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab06/index.html)
  
   - Lab 7 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab07/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab07/index.html)
+ 
+  - Lab 8 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab08/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab08/index.html)
+ 
+  - Lab 9 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab09/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab09/index.html)
 
 - HW
   - HW 1 (2020 Fall) - [Website](https://cs61a.org/hw/hw01/) - [Solution](HW/2020Fall/hw01)
