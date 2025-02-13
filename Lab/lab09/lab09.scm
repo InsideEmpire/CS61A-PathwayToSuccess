@@ -40,4 +40,9 @@
       b
       a))
 
-(define (gcd a b) 'YOUR-CODE-HERE)
+(define (gcd a b) 
+  (if (zero? (modulo (max a b) (min a b)))
+    (min a b)
+    (gcd (min a b) (modulo (max a b) (min a b)))
+  )
+)
