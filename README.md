@@ -37,6 +37,8 @@
   - HW 5 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw05/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/hw/sol-hw05/index.html)
  
   - HW 6 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw06/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/hw/sol-hw06/index.html)
+ 
+  - HW 7 - [Website](https://insideempire.github.io/CS61A-Website-Archive/hw/hw07/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/hw/sol-hw07/index.html)
 
 - Project
   - Project 1: The Game of Hog (2023 Spring)
