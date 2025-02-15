@@ -25,4 +25,15 @@
     )
 )
 
-(define (no-repeats s) 'YOUR-CODE-HERE)
+(define (no-repeats s) 
+    (define (not_equal_maker a)
+        (define (not_equal b)
+            (not (= a b))
+        )
+        not_equal
+    )
+    (if (null? s)
+        nil
+        (cons (car s) (filter (not_equal_maker (car s)) (no-repeats (cdr s))))
+    )
+)
