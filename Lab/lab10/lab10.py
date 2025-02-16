@@ -14,14 +14,14 @@ def calc_eval(exp):
     3
     """
     if isinstance(exp, Pair):
-        operator = ____________ # UPDATE THIS FOR Q2, e.g (+ 1 2), + is the operator
-        operands = ____________ # UPDATE THIS FOR Q2, e.g (+ 1 2), 1 and 2 are operands
+        operator = exp.first # UPDATE THIS FOR Q2, e.g (+ 1 2), + is the operator
+        operands = exp.rest # UPDATE THIS FOR Q2, e.g (+ 1 2), 1 and 2 are operands
         if operator == 'and': # and expressions
             return eval_and(operands)
         elif operator == 'define': # define expressions
             return eval_define(operands)
         else: # Call expressions
-            return calc_apply(___________, ___________) # UPDATE THIS FOR Q2, what is type(operator)?
+            return calc_apply(OPERATORS[operator], operands) # UPDATE THIS FOR Q2, what is type(operator)?
     elif exp in OPERATORS:   # Looking up procedures
         return OPERATORS[exp]
     elif isinstance(exp, int) or isinstance(exp, bool):   # Numbers and booleans
@@ -51,7 +51,16 @@ def floor_div(args):
     >>> calc_eval(Pair("//", Pair(100, Pair(Pair("+", Pair(2, Pair(3, nil))), nil))))
     20
     """
-    "*** YOUR CODE HERE ***"
+    if args.rest is nil:
+        return args.first
+    else:
+        if isinstance(args.first, Pair):
+            args.first = calc_eval(args.first)
+        if isinstance(args.rest.first, Pair):
+            args.rest.first = calc_eval(args.rest.first)
+        args.rest.first = args.first // args.rest.first
+        return floor_div(args.rest)
+
 
 scheme_t = True   # Scheme's #t
 scheme_f = False  # Scheme's #f
