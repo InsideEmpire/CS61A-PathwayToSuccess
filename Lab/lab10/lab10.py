@@ -82,7 +82,16 @@ def eval_and(expressions):
     >>> calc_eval(Pair("and", nil))
     True
     """
-    "*** YOUR CODE HERE ***"
+    if expressions is nil:
+        return scheme_t
+    if expressions.first is scheme_f:
+        return scheme_f
+    if expressions.rest is nil:
+        if isinstance(expressions.first, Pair):
+            return calc_eval(expressions.first)
+        else:
+            return expressions.first
+    return eval_and(expressions.rest)
 
 bindings = {}
 
