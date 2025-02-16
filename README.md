@@ -22,6 +22,8 @@
   - Lab 8 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab08/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab08/index.html)
  
   - Lab 9 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab09/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab09/index.html)
+ 
+  - Lab 10 - [Website](https://insideempire.github.io/CS61A-Website-Archive/lab/lab10/index.html) - [Solution](https://insideempire.github.io/CS61A-Website-Archive/lab/sol-lab10/index.html)
 
 - HW
   - HW 1 (2020 Fall) - [Website](https://cs61a.org/hw/hw01/) - [Solution](HW/2020Fall/hw01)
@@ -54,7 +56,7 @@
     - [Website](https://insideempire.github.io/CS61A-Website-Archive/proj/cats/index.html)
     - [Solution](Projects/cats/cats.py)
 
-  - Project 2: Ants Vs. SomeBees
+  - Project 3: Ants Vs. SomeBees
       - [Website](https://insideempire.github.io/CS61A-Website-Archive/proj/ants/index.html#)
       - [Solution](Projects/ants/ants.py)
 
