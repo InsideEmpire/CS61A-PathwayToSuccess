@@ -87,7 +87,12 @@ def eval_all(expressions, env):
     2
     """
     # BEGIN PROBLEM 6
-    return scheme_eval(expressions.first, env) # replace this with lines of your own code
+    if expressions is nil:
+        return None
+    expressions_index = expressions.map(lambda expr: scheme_eval(expr, env))
+    while expressions_index.rest:
+        expressions_index = expressions_index.rest
+    return expressions_index.first
     # END PROBLEM 6
 
 
