@@ -175,7 +175,7 @@ def do_cond_form(expressions, env):
             test = scheme_eval(clause.first, env)
         if is_scheme_true(test):
             # BEGIN PROBLEM 13
-            "*** YOUR CODE HERE ***"
+            return eval_all(clause.rest, env) if clause.rest is not nil else test
             # END PROBLEM 13
         expressions = expressions.rest
 
