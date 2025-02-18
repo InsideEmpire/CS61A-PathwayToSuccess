@@ -59,6 +59,10 @@
   - Project 3: Ants Vs. SomeBees
       - [Website](https://insideempire.github.io/CS61A-Website-Archive/proj/ants/index.html#)
       - [Solution](Projects/ants/ants.py)
+   
+  - Project 4: Scheme Interpreter
+      - [Website](https://insideempire.github.io/CS61A-Website-Archive/proj/scheme.html#)
+      - [Solution](Projects/scheme/)
 
 ## 友链 Friend Links:
 
