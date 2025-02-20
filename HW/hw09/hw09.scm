@@ -18,7 +18,7 @@
   (switch-to-cond (list 'switch expr options)))
 
 (define (switch-to-cond switch-expr)
-  (cons _________
+  (cons (quote cond)
         (map (lambda (option)
-               (cons _______________ (cdr option)))
+               (cons (list (quote equal?) (car (cdr switch-expr)) (car option)) (cdr option)))
              (car (cdr (cdr switch-expr))))))
