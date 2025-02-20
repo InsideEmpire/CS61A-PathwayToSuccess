@@ -8,7 +8,11 @@
 )
 
 (define (curry-consume curry args)
-  'YOUR-CODE-HERE)
+  (if (null? args)
+    curry
+    (curry-consume (curry (car args)) (cdr args))
+  )
+)
 
 (define-macro (switch expr options)
   (switch-to-cond (list 'switch expr options)))
