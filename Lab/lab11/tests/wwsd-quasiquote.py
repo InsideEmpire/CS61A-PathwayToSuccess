@@ -7,38 +7,28 @@ test = {
         {
           'code': r"""
           scm> '(1 x 3)
-          7026b4496459392f36b9a5b9dc64e31d
-          # locked
+          (1 x 3)
           scm> (define x 2)
-          5ce45267887fa5dae1771a9b64b54929
-          # locked
+          x
           scm> `(1 x 3)
-          7026b4496459392f36b9a5b9dc64e31d
-          # locked
+          (1 x 3)
           scm> `(1 ,x 3)
-          f22d790116f4f90477aa1ae1655e6839
-          # locked
+          (1 2 3)
           scm> `(1 x ,3)
-          7026b4496459392f36b9a5b9dc64e31d
-          # locked
+          (1 x 3)
           scm> `(1 (,x) 3)
-          d6cbc2f9e22d26450e36a1a1389f6877
-          # locked
+          (1 (2) 3)
           scm> `(1 ,(+ x 2) 3)
-          e5fe7be032d6f20684f70e368a87a802
-          # locked
+          (1 4 3)
           scm> (define y 3)
-          847f7c178da2025ec82e39b01a424bfd
-          # locked
+          y
           scm> `(x ,(* y x) y)
-          92b9752dff87988634b6cb3ff6c6e1c4
-          # locked
+          (x 6 y)
           scm> `(1 ,(cons x (list y 4)) 5)
-          ce6b93b75a78fd30ce0085c3355afe88
-          # locked
+          (1 (2 3 4) 5)
           """,
           'hidden': False,
-          'locked': True,
+          'locked': False,
           'multiline': False
         }
       ],
