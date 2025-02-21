@@ -31,7 +31,10 @@ CREATE TABLE sharing AS
   GROUP BY a.course;
 
 CREATE TABLE pairs AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT a.room || " and " || b.room || " together have " || (a.seats + b.seats) || " seats"
+  from sizes AS a, sizes AS b
+  WHERE a.room < b.room AND (a.seats + b.seats) >= 1000
+  ORDER BY (a.seats + b.seats) DESC;
 
 CREATE TABLE big AS
   SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
