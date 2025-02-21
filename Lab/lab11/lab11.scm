@@ -4,7 +4,18 @@
 
 (define (square n) (* n n))
 
-(define (pow-expr base exp) 'YOUR-CODE-HERE)
+(define (pow-expr base exp) 
+  (if (= exp 0)
+    1  
+    (if (= exp 1)
+      `(* ,base 1)
+      (if (= (remainder exp 2) 1)
+        `(* ,base ,(pow-expr base (- exp 1)))
+        `(square ,(pow-expr base (/ exp 2)))
+      )
+    )
+  )
+)
 
 (define-macro (repeat n expr)
   `(repeated-call ,n ___))
