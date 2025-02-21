@@ -34,7 +34,9 @@ CREATE TABLE by_parent_height AS
 
 -- The size of each dog
 CREATE TABLE size_of_dogs AS
-  SELECT "REPLACE THIS LINE WITH YOUR SOLUTION";
+  SELECT name, size
+  FROM dogs, sizes
+  WHERE height <= max and height > min;
 
 
 -- [Optional] Filling out this helper table is recommended
